@@ -53,9 +53,9 @@ export default function MissionSection() {
           </div>
 
           {/* Right Side - Statistics and Logos - Centered and positioned */}
-          <div className="flex flex-col mx-auto mt-12 gap-4" style={{width: 'max-content', height: '487.5px'}}>
+          <div className="flex flex-col mx-auto mt-20 gap-4" style={{width: 'max-content', height: '487.5px'}}>
             {/* Statistics - Lowered slightly and centered */}
-            <div className="flex items-center pt-4" style={{height: 'auto'}}>
+            <div className="flex items-center pt-8" style={{height: 'auto'}}>
               <div className="flex items-start gap-12 mx-auto">
                 <div className="flex flex-col">
                   <div className="text-hennessey-blue text-7xl font-normal mb-3 leading-none">95%</div>
