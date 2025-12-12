@@ -1,8 +1,11 @@
 import Image from 'next/image'
+import MissionSection from './components/MissionSection'
 
 export default function Home() {
   return (
-    <main className="relative w-full h-screen overflow-hidden">
+    <main className="relative w-full">
+      {/* Hero Section */}
+      <div className="relative w-full h-screen overflow-hidden">
       {/* Hero Section Container */}
       <div className="relative w-full h-full overflow-hidden">
         {/* Thin blue line at top */}
@@ -112,6 +115,9 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Mission Section */}
+      <MissionSection />
     </main>
   )
 }
