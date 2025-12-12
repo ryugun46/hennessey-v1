@@ -54,9 +54,9 @@ const teamMembers: TeamMember[] = [
 
 export default function TeamSection() {
   return (
-    <section className="w-full bg-hennessey-white py-20 px-12">
+    <section className="w-full bg-hennessey-white py-20 px-16">
       {/* Header Section */}
-      <div className="max-w-7xl mx-auto mb-16">
+      <div className="mb-16 pl-16 pr-16">
         <div className="flex items-start justify-between">
           {/* Left side with text */}
           <div className="flex items-start gap-6 max-w-4xl">
@@ -77,7 +77,7 @@ export default function TeamSection() {
       </div>
 
       {/* Team Grid */}
-      <div className="max-w-7xl mx-auto">
+      <div className="pl-16 pr-16">
         <div className="grid grid-cols-4 gap-6">
           {/* Team Member Cards */}
           {teamMembers.map((member) => (
