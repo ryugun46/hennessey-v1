@@ -37,8 +37,8 @@ export default function MissionSection() {
                 fill
                 className="object-cover"
               />
-              {/* How We Work Button Overlay */}
-              <div className="absolute bottom-8 left-8">
+              {/* How We Work Button Overlay - Centered */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 <button className="bg-gray-50 text-hennessey-black px-6 py-3 rounded-lg flex items-center gap-2 hover:shadow-lg hover:bg-gray-100 transition-all font-medium text-base group">
                   <span>How We Work</span>
                   <svg
