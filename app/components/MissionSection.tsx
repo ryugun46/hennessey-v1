@@ -2,17 +2,18 @@ import Image from 'next/image'
 
 export default function MissionSection() {
   return (
-    <section className="w-full bg-hennessey-white py-24 pl-16 pr-16">
+    <section className="w-full bg-hennessey-white py-24 px-16">
       {/* Top Section */}
-      <div className="mb-24">
-        <div className="flex items-start gap-16">
-          {/* Left Side - Our Mission Label - Aligned with "Scroll to know more" */}
-          <div className="flex items-center gap-3 flex-shrink-0">
-            <div className="w-2.5 h-2.5 rounded-full bg-hennessey-blue flex-shrink-0"></div>
-            <h2 className="text-hennessey-black text-xl font-medium whitespace-nowrap">Our Mission</h2>
-          </div>
+      <div className="max-w-7xl mx-auto mb-24 relative">
+        {/* Our Mission Label - Positioned absolutely to align with "Scroll to know more" */}
+        <div className="absolute left-0 flex items-center gap-3">
+          <div className="w-2.5 h-2.5 rounded-full bg-hennessey-blue flex-shrink-0"></div>
+          <h2 className="text-hennessey-black text-xl font-medium whitespace-nowrap">Our Mission</h2>
+        </div>
 
-          {/* Right Side - Mission Statement and Button */}
+        {/* Mission Statement and Button - Centered as before */}
+        <div className="flex items-start gap-16">
+          <div className="flex-shrink-0 w-[200px]"></div> {/* Spacer for Our Mission label */}
           <div className="flex-1">
             <p className="text-hennessey-black text-6xl font-normal leading-tight mb-10 max-w-5xl">
               Our mission is simple: To reduce complexity, improve reliability, and deliver measurable value across every project we touch.
@@ -25,7 +26,7 @@ export default function MissionSection() {
       </div>
 
       {/* Bottom Section */}
-      <div>
+      <div className="pl-16">
         <div className="flex items-start gap-16">
           {/* Left Side - Image Card with Button Overlay - Left edge aligned with "Scroll to know more" */}
           <div className="relative w-full max-w-[550px] flex-shrink-0">
@@ -53,38 +54,42 @@ export default function MissionSection() {
           </div>
 
           {/* Right Side - Statistics and Logos */}
-          <div className="flex-1 flex flex-col justify-center gap-12">
-            {/* Statistics - Centered vertically to align with construction image center */}
-            <div className="flex items-start gap-12">
-              <div className="flex flex-col">
-                <div className="text-hennessey-blue text-7xl font-bold mb-3 leading-none">95%</div>
-                <div className="text-hennessey-black text-base font-medium">Project Reliability</div>
-              </div>
-              
-              <div className="h-20 w-[1px] bg-gray-200 flex-shrink-0"></div>
-              
-              <div className="flex flex-col">
-                <div className="text-hennessey-blue text-7xl font-bold mb-3 leading-none">150+</div>
-                <div className="text-hennessey-black text-base font-medium">Vetted Suppliers</div>
-              </div>
-              
-              <div className="h-20 w-[1px] bg-gray-200 flex-shrink-0"></div>
-              
-              <div className="flex flex-col">
-                <div className="text-hennessey-blue text-7xl font-bold mb-3 leading-none">$10M+</div>
-                <div className="text-hennessey-black text-base font-medium">Cost Savings Delivered</div>
+          <div className="flex-1 flex flex-col" style={{height: '412.5px'}}>
+            {/* Statistics - Aligned with middle of construction image (50% height) */}
+            <div className="flex-1 flex items-center">
+              <div className="flex items-start gap-12 w-full">
+                <div className="flex flex-col">
+                  <div className="text-hennessey-blue text-7xl font-bold mb-3 leading-none">95%</div>
+                  <div className="text-hennessey-black text-base font-medium">Project Reliability</div>
+                </div>
+                
+                <div className="h-20 w-[1px] bg-gray-200 flex-shrink-0"></div>
+                
+                <div className="flex flex-col">
+                  <div className="text-hennessey-blue text-7xl font-bold mb-3 leading-none">150+</div>
+                  <div className="text-hennessey-black text-base font-medium">Vetted Suppliers</div>
+                </div>
+                
+                <div className="h-20 w-[1px] bg-gray-200 flex-shrink-0"></div>
+                
+                <div className="flex flex-col">
+                  <div className="text-hennessey-blue text-7xl font-bold mb-3 leading-none">$10M+</div>
+                  <div className="text-hennessey-black text-base font-medium">Cost Savings Delivered</div>
+                </div>
               </div>
             </div>
 
-            {/* Company Logos Image */}
-            <div className="w-full">
-              <Image
-                src="/site-assets/company-logos.png"
-                alt="Company logos"
-                width={600}
-                height={100}
-                className="object-contain"
-              />
+            {/* Company Logos Image - Aligned with bottom half of construction image */}
+            <div className="flex-1 flex items-end">
+              <div className="w-full">
+                <Image
+                  src="/site-assets/company-logos.png"
+                  alt="Company logos"
+                  width={600}
+                  height={100}
+                  className="object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>
