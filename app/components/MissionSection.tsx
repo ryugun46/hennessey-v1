@@ -2,11 +2,11 @@ import Image from 'next/image'
 
 export default function MissionSection() {
   return (
-    <section className="w-full bg-hennessey-white py-24 px-16">
+    <section className="w-full bg-hennessey-white py-24 pl-16 pr-16">
       {/* Top Section */}
-      <div className="max-w-7xl mx-auto mb-24">
+      <div className="mb-24">
         <div className="flex items-start gap-16">
-          {/* Left Side - Our Mission Label */}
+          {/* Left Side - Our Mission Label - Aligned with "Scroll to know more" */}
           <div className="flex items-center gap-3 flex-shrink-0">
             <div className="w-2.5 h-2.5 rounded-full bg-hennessey-blue flex-shrink-0"></div>
             <h2 className="text-hennessey-black text-xl font-medium whitespace-nowrap">Our Mission</h2>
@@ -14,7 +14,7 @@ export default function MissionSection() {
 
           {/* Right Side - Mission Statement and Button */}
           <div className="flex-1">
-            <p className="text-hennessey-black text-6xl font-bold leading-tight mb-10 max-w-5xl">
+            <p className="text-hennessey-black text-6xl font-normal leading-tight mb-10 max-w-5xl">
               Our mission is simple: To reduce complexity, improve reliability, and deliver measurable value across every project we touch.
             </p>
             <button className="bg-gray-50 text-hennessey-black px-8 py-4 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-100 transition-all font-medium text-base">
@@ -25,9 +25,9 @@ export default function MissionSection() {
       </div>
 
       {/* Bottom Section */}
-      <div className="max-w-7xl mx-auto">
+      <div>
         <div className="flex items-start gap-16">
-          {/* Left Side - Image Card with Button Overlay */}
+          {/* Left Side - Image Card with Button Overlay - Left edge aligned with "Scroll to know more" */}
           <div className="relative w-full max-w-[550px] flex-shrink-0">
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
               <Image
