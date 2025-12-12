@@ -68,20 +68,20 @@ export default function Home() {
           </h1>
 
           {/* Get in touch Button */}
-          <button className="bg-hennessey-blue text-hennessey-white px-12 py-6 rounded-lg flex items-center gap-4 mb-8 hover:opacity-90 transition-opacity group text-lg">
-            <span className="font-medium">Get in touch</span>
-            <div className="w-8 h-8 rounded-full bg-hennessey-white/20 flex items-center justify-center group-hover:bg-hennessey-white/30 transition-colors">
+          <button className="bg-hennessey-blue text-hennessey-white px-8 py-4 rounded-full flex items-center gap-6 mb-8 hover:opacity-90 transition-all group text-lg shadow-lg">
+            <span className="font-medium pl-2">Get in touch</span>
+            <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center group-hover:scale-105 transition-transform">
               <svg
-                className="w-4 h-4 text-hennessey-white"
+                className="w-6 h-6 text-hennessey-blue"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
+                strokeWidth={2.5}
               >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
                 />
               </svg>
             </div>
