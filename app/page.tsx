@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import MissionSection from './components/MissionSection'
 import ProcessSection from './components/ProcessSection'
+import TeamSection from './components/TeamSection'
 
 export default function Home() {
   return (
@@ -137,6 +138,9 @@ export default function Home() {
 
       {/* Process Section */}
       <ProcessSection />
+
+      {/* Team Section */}
+      <TeamSection />
     </main>
   )
 }
