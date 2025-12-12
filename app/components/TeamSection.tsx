@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { Card, CardContent } from '@/components/ui/card'
 
 interface TeamMember {
   id: number
@@ -95,15 +96,17 @@ export default function TeamSection() {
                 className="object-cover"
               />
               
-              {/* Text overlay with frosted glass effect */}
-              <div className="absolute bottom-0 left-0 right-0 bg-gray-900/60 backdrop-blur-md rounded-b-lg p-6 z-10">
-                <h3 className="text-white text-2xl font-bold mb-1.5">
-                  {member.name}
-                </h3>
-                <p className="text-white text-base font-normal">
-                  {member.title}
-                </p>
-              </div>
+              {/* Text overlay with frosted glass effect using Card */}
+              <Card className="absolute bottom-4 left-4 right-4 bg-gray-900/60 backdrop-blur-md border-0 shadow-none rounded-2xl z-10">
+                <CardContent className="p-6">
+                  <h3 className="text-white text-2xl font-bold mb-1.5 leading-tight">
+                    {member.name}
+                  </h3>
+                  <p className="text-white text-base font-normal leading-tight">
+                    {member.title}
+                  </p>
+                </CardContent>
+              </Card>
             </div>
           ))}
 
