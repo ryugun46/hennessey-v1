@@ -4,21 +4,22 @@ export default function MissionSection() {
   return (
     <section className="w-full bg-hennessey-white py-24 px-16">
       {/* Top Section */}
-      <div className="max-w-7xl mx-auto mb-24 relative">
-        {/* Mission Statement and Button */}
-        <div className="flex items-start gap-16">
-          <div className="flex-1">
-            <p className="text-hennessey-black text-6xl font-normal leading-tight mb-10 max-w-5xl">
+      <div className="mb-24 relative pl-16 pr-16">
+        {/* Our Mission Label - Leftmost, aligned with "Scroll to know more" */}
+        <div className="absolute left-16 flex items-center gap-3">
+          <div className="w-2.5 h-2.5 rounded-full bg-hennessey-blue flex-shrink-0"></div>
+          <h2 className="text-hennessey-black text-xl font-medium whitespace-nowrap">Our Mission</h2>
+        </div>
+
+        {/* Mission Statement and Button - Right side but not too far right */}
+        <div className="flex justify-end">
+          <div className="max-w-4xl">
+            <p className="text-hennessey-black text-6xl font-normal leading-tight mb-10">
               Our mission is simple: To reduce complexity, improve reliability, and deliver measurable value across every project we touch.
             </p>
             <button className="bg-gray-300 text-hennessey-black px-8 py-4 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-400 transition-all font-medium text-base">
               About Us
             </button>
-          </div>
-          {/* Our Mission Label - Positioned to the right */}
-          <div className="flex items-center gap-3 flex-shrink-0">
-            <div className="w-2.5 h-2.5 rounded-full bg-hennessey-blue flex-shrink-0"></div>
-            <h2 className="text-hennessey-black text-xl font-medium whitespace-nowrap">Our Mission</h2>
           </div>
         </div>
       </div>
@@ -53,8 +54,8 @@ export default function MissionSection() {
 
           {/* Right Side - Statistics and Logos */}
           <div className="flex-1 flex flex-col" style={{height: '412.5px'}}>
-            {/* Statistics - Aligned with middle of construction image (50% height) */}
-            <div className="flex-1 flex items-center">
+            {/* Statistics - Aligned with middle of "How We Work" button (50% of image height) */}
+            <div className="flex items-center" style={{height: '50%'}}>
               <div className="flex items-start gap-12 w-full">
                 <div className="flex flex-col">
                   <div className="text-hennessey-blue text-7xl font-normal mb-3 leading-none">95%</div>
@@ -77,8 +78,8 @@ export default function MissionSection() {
               </div>
             </div>
 
-            {/* Company Logos Image - Aligned with bottom half of construction image, transparent background, larger size */}
-            <div className="flex-1 flex items-end">
+            {/* Company Logos Image - Below statistics, aligned with bottom */}
+            <div className="flex items-end" style={{height: '50%'}}>
               <div className="w-full">
                 <Image
                   src="/site-assets/company-logos.png"
