@@ -28,7 +28,7 @@ export default function MissionSection() {
       <div className="pl-16 pr-16">
         <div className="flex items-start gap-16">
           {/* Left Side - Image Card with Button Overlay - Left edge aligned with "Scroll to know more" */}
-          <div className="relative w-full max-w-[550px] flex-shrink-0">
+          <div className="relative w-full max-w-[650px] flex-shrink-0">
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
               <Image
                 src="/site-assets/working.png"
@@ -53,7 +53,7 @@ export default function MissionSection() {
           </div>
 
           {/* Right Side - Statistics and Logos - Centered and positioned */}
-          <div className="flex flex-col mx-auto mt-12" style={{width: 'max-content', height: '412.5px'}}>
+          <div className="flex flex-col mx-auto mt-12" style={{width: 'max-content', height: '487.5px'}}>
             {/* Statistics - Lowered slightly and centered */}
             <div className="flex items-center pt-4" style={{height: '50%'}}>
               <div className="flex items-start gap-12 mx-auto">
