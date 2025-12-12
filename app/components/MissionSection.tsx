@@ -52,11 +52,11 @@ export default function MissionSection() {
             </div>
           </div>
 
-          {/* Right Side - Statistics and Logos - Slightly to the left and lower */}
-          <div className="flex flex-col ml-auto -mr-8 mt-8" style={{width: 'max-content', height: '412.5px'}}>
-            {/* Statistics - Aligned with middle of "How We Work" button (50% of image height) */}
-            <div className="flex items-center" style={{height: '50%'}}>
-              <div className="flex items-start gap-12">
+          {/* Right Side - Statistics and Logos - Centered and positioned */}
+          <div className="flex flex-col mx-auto mt-12" style={{width: 'max-content', height: '412.5px'}}>
+            {/* Statistics - Lowered slightly and centered */}
+            <div className="flex items-center pt-4" style={{height: '50%'}}>
+              <div className="flex items-start gap-12 mx-auto">
                 <div className="flex flex-col">
                   <div className="text-hennessey-blue text-7xl font-normal mb-3 leading-none">95%</div>
                   <div className="text-hennessey-black text-base font-medium">Project Reliability</div>
