@@ -54,9 +54,9 @@ export default function MissionSection() {
           </div>
 
           {/* Right Side - Statistics and Logos */}
-          <div className="flex-1">
+          <div className="flex-1 flex flex-col justify-between" style={{minHeight: '412.5px'}}>
             {/* Statistics */}
-            <div className="flex items-start gap-12 mb-16">
+            <div className="flex items-start gap-12 mb-auto">
               <div className="flex flex-col">
                 <div className="text-hennessey-blue text-7xl font-bold mb-3 leading-none">95%</div>
                 <div className="text-hennessey-black text-base font-medium">Project Reliability</div>
@@ -77,8 +77,10 @@ export default function MissionSection() {
               </div>
             </div>
 
-            {/* Partner Logos */}
-            <PartnerLogos />
+            {/* Partner Logos - Aligned to bottom */}
+            <div className="mt-auto">
+              <PartnerLogos />
+            </div>
           </div>
         </div>
       </div>

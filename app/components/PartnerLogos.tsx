@@ -1,76 +1,69 @@
 export default function PartnerLogos() {
-  const logoSize = 40;
-  const logoColor = "#808080"; // Grey color for logos
+  const logoColor = "#666666"; // Medium-dark gray color for logos
 
   return (
-    <div className="flex items-center gap-8">
-      {/* LinkedIn Logo */}
-      <svg
-        width={logoSize}
-        height={logoSize}
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="hover:opacity-80 transition-opacity cursor-pointer"
-      >
-        <path
-          d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-          fill={logoColor}
-        />
-      </svg>
+    <div className="flex items-baseline gap-10">
+      {/* LinkedIn Logo - "Linked" text + rounded box with "in" */}
+      <div className="flex items-center hover:opacity-80 transition-opacity cursor-pointer">
+        <span className="text-[16px] font-semibold text-[#666666] mr-1">Linked</span>
+        <div className="w-[18px] h-[18px] bg-[#666666] rounded-[3px] flex items-center justify-center">
+          <span className="text-[11px] font-bold text-white">in</span>
+        </div>
+      </div>
 
-      {/* Instagram Logo */}
-      <svg
-        width={logoSize}
-        height={logoSize}
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="hover:opacity-80 transition-opacity cursor-pointer"
-      >
-        <path
-          d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-          fill={logoColor}
-        />
-      </svg>
+      {/* Instagram Logo - Cursive/script font */}
+      <div className="hover:opacity-80 transition-opacity cursor-pointer">
+        <span 
+          className="text-[18px] text-[#666666]"
+          style={{
+            fontFamily: "'Brush Script MT', 'Brush Script', cursive",
+            fontStyle: 'italic'
+          }}
+        >
+          Instagram
+        </span>
+      </div>
 
-      {/* Apple Pay Logo - Apple logo icon */}
-      <svg
-        width={logoSize}
-        height={logoSize}
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="hover:opacity-80 transition-opacity cursor-pointer"
-      >
-        <path
-          d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"
-          fill={logoColor}
-        />
-      </svg>
+      {/* Apple Pay Logo - Apple symbol + "Pay" */}
+      <div className="flex items-center gap-1 hover:opacity-80 transition-opacity cursor-pointer">
+        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path 
+            d="M13.45 1.77c-0.97 0.55-2.2 0.98-3.45 0.93-0.07-1.18 0.4-2.35 1.18-2.87 0.78-0.52 1.97-0.91 3.01-0.43 0.36 1.29-0.05 2.56-0.74 3.37zm0.44 2.31c-1.33-0.08-2.46 0.78-3.08 0.78-0.64 0-1.59-0.76-2.63-0.74-1.36 0.03-2.61 0.79-3.31 2.01-1.41 2.44-0.37 6.06 1 8.04 0.68 0.99 1.49 2.1 2.56 2.06 1.04-0.05 1.43-0.67 2.69-0.67 1.26 0 1.61 0.67 2.71 0.65 1.12-0.02 1.83-1.01 2.5-2.01 0.79-1.15 1.11-2.26 1.13-2.32-0.02 0-2.17-0.83-2.2-3.3-0.02-2.09 1.71-3.09 1.78-3.14-0.97-1.41-2.47-1.56-3-1.59z" 
+            fill={logoColor}
+          />
+        </svg>
+        <span className="text-[14px] font-bold text-[#666666]">Pay</span>
+      </div>
 
-      {/* Amazon Logo */}
-      <svg
-        width={logoSize}
-        height={logoSize}
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="hover:opacity-80 transition-opacity cursor-pointer"
-      >
-        <path
-          d="M15.64 12.69c-.04.87-.23 1.69-.58 2.46-.35.77-.85 1.44-1.5 2.02-.65.58-1.45 1.04-2.4 1.38-.95.34-2.03.51-3.24.51H5.81V6.97h2.11c1.21 0 2.29.17 3.24.51.95.34 1.75.8 2.4 1.38.65.58 1.15 1.25 1.5 2.02.35.77.54 1.59.58 2.46v.35zm-1.22-1.54c.02-.67-.1-1.3-.35-1.88-.25-.58-.62-1.08-1.11-1.49-.49-.41-1.08-.73-1.77-.95-.69-.22-1.45-.33-2.28-.33H7.05v10.35h1.35c.83 0 1.59-.11 2.28-.33.69-.22 1.28-.54 1.77-.95.49-.41.86-.91 1.11-1.49.25-.58.37-1.21.35-1.88v-.35z"
-          fill={logoColor}
-        />
-        <path
-          d="M18.19 19.5l-1.75-4.87 1.75-4.87h1.5l-2.25 5.74 2.25 5.74h-1.5z"
-          fill={logoColor}
-        />
-        <path
-          d="M21.75 19.5h-1.5V9.76h1.5v9.74z"
-          fill={logoColor}
-        />
-      </svg>
+      {/* Amazon Logo - lowercase "amazon" with curved arrow */}
+      <div className="relative hover:opacity-80 transition-opacity cursor-pointer pt-1">
+        <span className="text-[16px] font-bold text-[#666666] lowercase">amazon</span>
+        <svg 
+          className="absolute bottom-0 left-0" 
+          width="80" 
+          height="10" 
+          viewBox="0 0 80 10" 
+          fill="none" 
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+        >
+          <path 
+            d="M3 8 Q40 2 75 8" 
+            stroke={logoColor} 
+            strokeWidth="1.8" 
+            fill="none" 
+            strokeLinecap="round"
+          />
+          <path 
+            d="M69 6 L75 8 L73 10" 
+            stroke={logoColor} 
+            strokeWidth="1.8" 
+            fill="none" 
+            strokeLinecap="round" 
+            strokeLinejoin="round"
+          />
+        </svg>
+      </div>
     </div>
   )
 }
