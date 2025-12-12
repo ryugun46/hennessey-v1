@@ -11,8 +11,8 @@ export default function MissionSection() {
           <h2 className="text-hennessey-black text-xl font-medium whitespace-nowrap">Our Mission</h2>
         </div>
 
-        {/* Mission Statement and Button - Right side but not too far right */}
-        <div className="flex justify-end">
+        {/* Mission Statement and Button - Centered */}
+        <div className="flex justify-center">
           <div className="max-w-4xl">
             <p className="text-hennessey-black text-6xl font-normal leading-tight mb-10">
               Our mission is simple: To reduce complexity, improve reliability, and deliver measurable value across every project we touch.
@@ -25,7 +25,7 @@ export default function MissionSection() {
       </div>
 
       {/* Bottom Section */}
-      <div className="pl-16">
+      <div className="pl-16 pr-16">
         <div className="flex items-start gap-16">
           {/* Left Side - Image Card with Button Overlay - Left edge aligned with "Scroll to know more" */}
           <div className="relative w-full max-w-[550px] flex-shrink-0">
@@ -52,11 +52,11 @@ export default function MissionSection() {
             </div>
           </div>
 
-          {/* Right Side - Statistics and Logos */}
-          <div className="flex-1 flex flex-col" style={{height: '412.5px'}}>
+          {/* Right Side - Statistics and Logos - Aligned with ending of centered mission statement */}
+          <div className="flex flex-col ml-auto" style={{width: 'max-content', height: '412.5px'}}>
             {/* Statistics - Aligned with middle of "How We Work" button (50% of image height) */}
             <div className="flex items-center" style={{height: '50%'}}>
-              <div className="flex items-start gap-12 w-full">
+              <div className="flex items-start gap-12">
                 <div className="flex flex-col">
                   <div className="text-hennessey-blue text-7xl font-normal mb-3 leading-none">95%</div>
                   <div className="text-hennessey-black text-base font-medium">Project Reliability</div>
@@ -78,14 +78,14 @@ export default function MissionSection() {
               </div>
             </div>
 
-            {/* Company Logos Image - Below statistics, aligned with bottom */}
+            {/* Company Logos Image - Below statistics, aligned with bottom, bigger */}
             <div className="flex items-end" style={{height: '50%'}}>
               <div className="w-full">
                 <Image
                   src="/site-assets/company-logos.png"
                   alt="Company logos"
-                  width={800}
-                  height={150}
+                  width={1000}
+                  height={180}
                   className="object-contain"
                   style={{mixBlendMode: 'multiply'}}
                 />
