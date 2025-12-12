@@ -2,9 +2,9 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-gray-100">
+    <main className="relative w-full h-screen overflow-hidden">
       {/* Hero Section Container */}
-      <div className="relative w-[1440px] h-[850px] overflow-hidden">
+      <div className="relative w-full h-full overflow-hidden">
         {/* Thin blue line at top */}
         <div className="absolute top-0 left-0 right-0 h-[2px] bg-hennessey-blue z-50" />
         
