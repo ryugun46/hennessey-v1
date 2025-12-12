@@ -13,7 +13,7 @@ export default function MissionSection() {
 
         {/* Mission Statement and Button - Centered */}
         <div className="flex justify-center">
-          <div className="max-w-4xl">
+          <div className="max-w-6xl">
             <p className="text-hennessey-black text-6xl font-normal leading-tight mb-10">
               Our mission is simple: To reduce complexity, improve reliability, and deliver measurable value across every project we touch.
             </p>
@@ -52,8 +52,8 @@ export default function MissionSection() {
             </div>
           </div>
 
-          {/* Right Side - Statistics and Logos - Aligned with ending of centered mission statement */}
-          <div className="flex flex-col ml-auto" style={{width: 'max-content', height: '412.5px'}}>
+          {/* Right Side - Statistics and Logos - Slightly to the left and lower */}
+          <div className="flex flex-col ml-auto -mr-8 mt-8" style={{width: 'max-content', height: '412.5px'}}>
             {/* Statistics - Aligned with middle of "How We Work" button (50% of image height) */}
             <div className="flex items-center" style={{height: '50%'}}>
               <div className="flex items-start gap-12">
