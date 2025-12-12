@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="relative w-full flex flex-col items-center">
       {/* Hero Section */}
-      <div className="relative w-full max-w-[1440px] h-[850px] overflow-hidden mx-auto my-0">
+      <div className="relative w-full max-w-[1440px] overflow-hidden mx-auto my-0">
         {/* Hero Section Container */}
         <div className="relative w-full h-full overflow-hidden">
         {/* Thin blue line at top */}

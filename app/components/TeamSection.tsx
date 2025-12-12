@@ -57,7 +57,7 @@ const teamMembers: TeamMember[] = [
 
 export default function TeamSection() {
   return (
-    <section className="w-full max-w-[1440px] h-[850px] bg-hennessey-white py-12 px-16 mx-auto my-0 overflow-hidden">
+    <section className="w-full max-w-[1440px] bg-hennessey-white py-12 px-16 mx-auto my-0">
       {/* Header Section */}
       <div className="mb-8 pl-16 pr-16">
         <div className="flex items-start justify-between">
