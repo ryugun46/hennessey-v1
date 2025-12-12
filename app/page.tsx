@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import MissionSection from './components/MissionSection'
+import ProcessSection from './components/ProcessSection'
 
 export default function Home() {
   return (
@@ -119,6 +120,9 @@ export default function Home() {
 
       {/* Mission Section */}
       <MissionSection />
+
+      {/* Process Section */}
+      <ProcessSection />
     </main>
   )
 }
