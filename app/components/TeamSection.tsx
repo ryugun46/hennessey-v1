@@ -8,46 +8,48 @@ interface TeamMember {
 }
 
 const teamMembers: TeamMember[] = [
+  // Row 1
   {
     id: 1,
-    name: 'Michael Anderson',
-    title: 'Chief Executive Officer',
+    name: 'Han Seung-min',
+    title: 'Head of Electronics Division',
     imageUrl: '/site-assets/ceo.jpg'
   },
   {
     id: 2,
-    name: 'Sarah Chen',
-    title: 'Chief Operating Officer',
+    name: 'Yujun Yang',
+    title: 'Chief Executive Officer',
     imageUrl: '/site-assets/ceo.jpg'
   },
   {
     id: 3,
-    name: 'David Martinez',
-    title: 'Head of Procurement Division',
+    name: 'Kim Ji-hoon',
+    title: 'Chief Operating Officer',
     imageUrl: '/site-assets/ceo.jpg'
   },
   {
     id: 4,
-    name: 'Emily Thompson',
-    title: 'Director of Operations',
+    name: 'Lee Hyun-woo',
+    title: 'Director of Construction',
     imageUrl: '/site-assets/ceo.jpg'
   },
+  // Row 2
   {
     id: 5,
-    name: 'James Wilson',
-    title: 'Head of Supply Chain',
+    name: 'Choi Soo-jin',
+    title: 'Head of Interior Design',
     imageUrl: '/site-assets/ceo.jpg'
   },
   {
     id: 6,
-    name: 'Rachel Kim',
+    name: 'Jung Da-eun',
     title: 'Marketing & Communications Manager',
     imageUrl: '/site-assets/ceo.jpg'
   },
   {
     id: 7,
-    name: 'Robert Harrison',
-    title: 'Head of Construction Advisory',
+    name: 'Han Seung-min',
+    title: 'Head of Electronics & Division',
     imageUrl: '/site-assets/ceo.jpg'
   }
 ]
@@ -93,15 +95,12 @@ export default function TeamSection() {
                 className="object-cover"
               />
               
-              {/* Dark overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-              
-              {/* Text overlay */}
-              <div className="absolute bottom-0 left-0 right-0 p-6 z-10">
-                <h3 className="text-hennessey-white text-2xl font-semibold mb-1">
+              {/* Text overlay with semi-transparent background */}
+              <div className="absolute bottom-0 left-0 right-0 bg-black/50 backdrop-blur-sm p-6 z-10">
+                <h3 className="text-hennessey-white text-xl font-semibold mb-1">
                   {member.name}
                 </h3>
-                <p className="text-hennessey-white/80 text-base">
+                <p className="text-hennessey-white/90 text-sm">
                   {member.title}
                 </p>
               </div>
@@ -109,18 +108,18 @@ export default function TeamSection() {
           ))}
 
           {/* About Us Card */}
-          <div className="relative h-[550px] rounded-lg overflow-hidden bg-hennessey-blue p-8 flex flex-col justify-between">
+          <div className="relative h-[550px] rounded-lg overflow-hidden bg-hennessey-blue p-10 flex flex-col justify-between">
             <div>
-              <h3 className="text-hennessey-white text-4xl font-bold mb-6">
+              <h3 className="text-hennessey-white text-5xl font-bold mb-8">
                 About Us
               </h3>
-              <p className="text-hennessey-white/90 text-lg leading-relaxed">
+              <p className="text-hennessey-white text-lg leading-relaxed">
                 Behind every project is a team dedicated to smarter planning, reliable procurement, and measurable results.
               </p>
             </div>
 
             {/* Work With Us button */}
-            <button className="bg-hennessey-white text-hennessey-blue px-8 py-4 rounded-full text-lg font-medium hover:opacity-90 transition-opacity self-start">
+            <button className="bg-hennessey-white text-hennessey-blue px-10 py-4 rounded-full text-lg font-semibold hover:opacity-90 transition-opacity self-start">
               Work With Us
             </button>
           </div>
