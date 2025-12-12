@@ -54,7 +54,7 @@ const teamMembers: TeamMember[] = [
 
 export default function TeamSection() {
   return (
-    <section className="w-full bg-hennessey-black py-20 px-12">
+    <section className="w-full bg-hennessey-white py-20 px-12">
       {/* Header Section */}
       <div className="max-w-7xl mx-auto mb-16">
         <div className="flex items-start justify-between">
@@ -64,7 +64,7 @@ export default function TeamSection() {
             <div className="w-4 h-4 rounded-full bg-hennessey-blue flex-shrink-0 mt-2" />
             
             {/* Header text */}
-            <h2 className="text-hennessey-white text-5xl font-bold leading-tight">
+            <h2 className="text-hennessey-black text-5xl font-bold leading-tight">
               Nice to meet you. We bring reliability, transparency, and expertise to every construction procurement strategy.
             </h2>
           </div>
