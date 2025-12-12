@@ -86,7 +86,7 @@ export default function TeamSection() {
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="relative h-[550px] rounded-lg overflow-hidden group cursor-pointer"
+              className="relative h-[400px] rounded-lg overflow-hidden group cursor-pointer"
             >
               {/* Team member image */}
               <Image
@@ -96,8 +96,8 @@ export default function TeamSection() {
                 className="object-cover"
               />
               
-              {/* Text overlay with frosted glass effect using Card */}
-              <Card className="absolute bottom-4 left-4 right-4 bg-gray-900/60 backdrop-blur-md border-0 shadow-none rounded-2xl z-10">
+              {/* Text overlay with crystal clear blur effect using Card */}
+              <Card className="absolute bottom-4 left-4 right-4 bg-white/10 backdrop-blur-lg border-0 shadow-lg rounded-2xl z-10">
                 <CardContent className="p-6">
                   <h3 className="text-white text-2xl font-bold mb-1.5 leading-tight">
                     {member.name}
@@ -111,7 +111,7 @@ export default function TeamSection() {
           ))}
 
           {/* About Us Card */}
-          <div className="relative h-[550px] rounded-lg overflow-hidden bg-hennessey-blue p-10 flex flex-col justify-between">
+          <div className="relative h-[400px] rounded-lg overflow-hidden bg-hennessey-blue p-10 flex flex-col justify-between">
             <div>
               <h3 className="text-hennessey-white text-5xl font-bold mb-8">
                 About Us
