@@ -97,7 +97,7 @@ export default function TeamSection() {
               />
               
               {/* Text overlay with crystal clear blur effect using Card */}
-              <Card className="absolute bottom-4 left-4 right-4 bg-white/10 backdrop-blur-lg border-0 shadow-lg rounded-2xl z-10">
+              <Card className="absolute bottom-4 left-4 right-4 bg-black/20 backdrop-blur-lg border-0 shadow-lg rounded-2xl z-10">
                 <CardContent className="p-6">
                   <h3 className="text-white text-2xl font-bold mb-1.5 leading-tight">
                     {member.name}
