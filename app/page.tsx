@@ -6,8 +6,8 @@ export default function Home() {
     <main className="relative w-full">
       {/* Hero Section */}
       <div className="relative w-full h-screen overflow-hidden">
-      {/* Hero Section Container */}
-      <div className="relative w-full h-full overflow-hidden">
+        {/* Hero Section Container */}
+        <div className="relative w-full h-full overflow-hidden">
         {/* Thin blue line at top */}
         <div className="absolute top-0 left-0 right-0 h-[2px] bg-hennessey-blue z-50" />
         
