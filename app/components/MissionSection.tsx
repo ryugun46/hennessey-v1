@@ -14,10 +14,10 @@ export default function MissionSection() {
         {/* Mission Statement and Button - Centered */}
         <div className="flex justify-center">
           <div className="max-w-6xl">
-            <p className="text-hennessey-black text-6xl font-normal leading-tight mb-10">
+            <p className="text-hennessey-black text-6xl font-normal mb-10" style={{maxWidth: '1100px', lineHeight: '1.15'}}>
               Our mission is simple: To reduce complexity, improve reliability, and deliver measurable value across every project we touch.
             </p>
-            <button className="bg-gray-300 text-hennessey-black px-8 py-4 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-400 transition-all font-medium text-base">
+            <button className="bg-[#E6E3DE] text-[#444444] px-10 py-3 rounded-full border-0 shadow-none hover:opacity-90 transition-opacity font-medium text-base" style={{fontFamily: 'sans-serif'}}>
               About Us
             </button>
           </div>
@@ -53,9 +53,9 @@ export default function MissionSection() {
           </div>
 
           {/* Right Side - Statistics and Logos - Centered and positioned */}
-          <div className="flex flex-col mx-auto mt-12" style={{width: 'max-content', height: '487.5px'}}>
+          <div className="flex flex-col mx-auto mt-12 gap-4" style={{width: 'max-content', height: '487.5px'}}>
             {/* Statistics - Lowered slightly and centered */}
-            <div className="flex items-center pt-4" style={{height: '50%'}}>
+            <div className="flex items-center pt-4" style={{height: 'auto'}}>
               <div className="flex items-start gap-12 mx-auto">
                 <div className="flex flex-col">
                   <div className="text-hennessey-blue text-7xl font-normal mb-3 leading-none">95%</div>
@@ -78,8 +78,8 @@ export default function MissionSection() {
               </div>
             </div>
 
-            {/* Company Logos Image - Below statistics, aligned with bottom, bigger */}
-            <div className="flex items-end" style={{height: '50%'}}>
+            {/* Company Logos Image - Closer to statistics */}
+            <div className="flex items-start">
               <div className="w-full">
                 <Image
                   src="/site-assets/company-logos.png"
