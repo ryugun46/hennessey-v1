@@ -95,12 +95,12 @@ export default function TeamSection() {
                 className="object-cover"
               />
               
-              {/* Text overlay with semi-transparent background */}
-              <div className="absolute bottom-0 left-0 right-0 bg-black/50 backdrop-blur-sm p-6 z-10">
-                <h3 className="text-hennessey-white text-xl font-semibold mb-1">
+              {/* Text overlay with semi-transparent dark grey background */}
+              <div className="absolute bottom-0 left-0 right-0 bg-gray-900/70 rounded-b-lg p-6 z-10">
+                <h3 className="text-white text-2xl font-semibold mb-1">
                   {member.name}
                 </h3>
-                <p className="text-hennessey-white/90 text-sm">
+                <p className="text-white text-base">
                   {member.title}
                 </p>
               </div>
