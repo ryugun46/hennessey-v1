@@ -12,43 +12,43 @@ const teamMembers: TeamMember[] = [
     id: 1,
     name: 'Michael Anderson',
     title: 'Chief Executive Officer',
-    imageUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&h=1000&fit=crop&q=80'
+    imageUrl: '/site-assets/ceo.jpg'
   },
   {
     id: 2,
     name: 'Sarah Chen',
     title: 'Chief Operating Officer',
-    imageUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=1000&fit=crop&q=80'
+    imageUrl: '/site-assets/ceo.jpg'
   },
   {
     id: 3,
     name: 'David Martinez',
     title: 'Head of Procurement Division',
-    imageUrl: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&h=1000&fit=crop&q=80'
+    imageUrl: '/site-assets/ceo.jpg'
   },
   {
     id: 4,
     name: 'Emily Thompson',
     title: 'Director of Operations',
-    imageUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&h=1000&fit=crop&q=80'
+    imageUrl: '/site-assets/ceo.jpg'
   },
   {
     id: 5,
     name: 'James Wilson',
     title: 'Head of Supply Chain',
-    imageUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&h=1000&fit=crop&q=80'
+    imageUrl: '/site-assets/ceo.jpg'
   },
   {
     id: 6,
     name: 'Rachel Kim',
     title: 'Marketing & Communications Manager',
-    imageUrl: 'https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=800&h=1000&fit=crop&q=80'
+    imageUrl: '/site-assets/ceo.jpg'
   },
   {
     id: 7,
     name: 'Robert Harrison',
     title: 'Head of Construction Advisory',
-    imageUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=1000&fit=crop&q=80'
+    imageUrl: '/site-assets/ceo.jpg'
   }
 ]
 
