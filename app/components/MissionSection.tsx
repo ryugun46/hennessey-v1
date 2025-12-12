@@ -36,19 +36,6 @@ export default function MissionSection() {
                 fill
                 className="object-cover"
               />
-              {/* How We Work Button Overlay - Centered */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                <button className="bg-gray-50 text-hennessey-black px-6 py-3 rounded-lg flex items-center gap-2 hover:shadow-lg hover:bg-gray-100 transition-all font-medium text-base group">
-                  <span>How We Work</span>
-                  <svg
-                    className="w-4 h-4 group-hover:translate-x-0.5 transition-transform"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </button>
-              </div>
             </div>
           </div>
 
