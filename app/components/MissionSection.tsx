@@ -5,22 +5,20 @@ export default function MissionSection() {
     <section className="w-full bg-hennessey-white py-24 px-16">
       {/* Top Section */}
       <div className="max-w-7xl mx-auto mb-24 relative">
-        {/* Our Mission Label - Positioned absolutely to align with "Scroll to know more" */}
-        <div className="absolute left-0 flex items-center gap-3">
-          <div className="w-2.5 h-2.5 rounded-full bg-hennessey-blue flex-shrink-0"></div>
-          <h2 className="text-hennessey-black text-xl font-medium whitespace-nowrap">Our Mission</h2>
-        </div>
-
-        {/* Mission Statement and Button - Centered as before */}
+        {/* Mission Statement and Button */}
         <div className="flex items-start gap-16">
-          <div className="flex-shrink-0 w-[200px]"></div> {/* Spacer for Our Mission label */}
           <div className="flex-1">
             <p className="text-hennessey-black text-6xl font-normal leading-tight mb-10 max-w-5xl">
               Our mission is simple: To reduce complexity, improve reliability, and deliver measurable value across every project we touch.
             </p>
-            <button className="bg-gray-50 text-hennessey-black px-8 py-4 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-100 transition-all font-medium text-base">
+            <button className="bg-gray-300 text-hennessey-black px-8 py-4 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-400 transition-all font-medium text-base">
               About Us
             </button>
+          </div>
+          {/* Our Mission Label - Positioned to the right */}
+          <div className="flex items-center gap-3 flex-shrink-0">
+            <div className="w-2.5 h-2.5 rounded-full bg-hennessey-blue flex-shrink-0"></div>
+            <h2 className="text-hennessey-black text-xl font-medium whitespace-nowrap">Our Mission</h2>
           </div>
         </div>
       </div>
@@ -59,35 +57,36 @@ export default function MissionSection() {
             <div className="flex-1 flex items-center">
               <div className="flex items-start gap-12 w-full">
                 <div className="flex flex-col">
-                  <div className="text-hennessey-blue text-7xl font-bold mb-3 leading-none">95%</div>
+                  <div className="text-hennessey-blue text-7xl font-normal mb-3 leading-none">95%</div>
                   <div className="text-hennessey-black text-base font-medium">Project Reliability</div>
                 </div>
                 
                 <div className="h-20 w-[1px] bg-gray-200 flex-shrink-0"></div>
                 
                 <div className="flex flex-col">
-                  <div className="text-hennessey-blue text-7xl font-bold mb-3 leading-none">150+</div>
+                  <div className="text-hennessey-blue text-7xl font-normal mb-3 leading-none">150+</div>
                   <div className="text-hennessey-black text-base font-medium">Vetted Suppliers</div>
                 </div>
                 
                 <div className="h-20 w-[1px] bg-gray-200 flex-shrink-0"></div>
                 
                 <div className="flex flex-col">
-                  <div className="text-hennessey-blue text-7xl font-bold mb-3 leading-none">$10M+</div>
+                  <div className="text-hennessey-blue text-7xl font-normal mb-3 leading-none">$10M+</div>
                   <div className="text-hennessey-black text-base font-medium">Cost Savings Delivered</div>
                 </div>
               </div>
             </div>
 
-            {/* Company Logos Image - Aligned with bottom half of construction image */}
+            {/* Company Logos Image - Aligned with bottom half of construction image, transparent background, larger size */}
             <div className="flex-1 flex items-end">
               <div className="w-full">
                 <Image
                   src="/site-assets/company-logos.png"
                   alt="Company logos"
-                  width={600}
-                  height={100}
+                  width={800}
+                  height={150}
                   className="object-contain"
+                  style={{mixBlendMode: 'multiply'}}
                 />
               </div>
             </div>
