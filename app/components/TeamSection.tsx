@@ -57,9 +57,9 @@ const teamMembers: TeamMember[] = [
 
 export default function TeamSection() {
   return (
-    <section className="w-full bg-hennessey-white py-20 px-16">
+    <section className="w-full max-w-[1440px] h-[850px] bg-hennessey-white py-12 px-16 mx-auto my-0 overflow-hidden">
       {/* Header Section */}
-      <div className="mb-16 pl-16 pr-16">
+      <div className="mb-8 pl-16 pr-16">
         <div className="flex items-start justify-between">
           {/* Left side with text */}
           <div className="flex items-start gap-6 max-w-4xl">
@@ -67,13 +67,13 @@ export default function TeamSection() {
             <div className="w-4 h-4 rounded-full bg-hennessey-blue flex-shrink-0 mt-2" />
             
             {/* Header text */}
-            <h2 className="text-hennessey-black text-5xl font-bold leading-tight">
+            <h2 className="text-hennessey-black text-3xl font-bold leading-tight">
               Nice to meet you. We bring reliability, transparency, and expertise to every construction procurement strategy.
             </h2>
           </div>
 
           {/* Let's Talk button */}
-          <button className="bg-hennessey-blue text-hennessey-white px-10 py-4 rounded-full text-lg font-medium hover:opacity-90 transition-opacity flex-shrink-0 ml-8">
+          <button className="bg-hennessey-blue text-hennessey-white px-8 py-3 rounded-full text-base font-medium hover:opacity-90 transition-opacity flex-shrink-0 ml-8">
             Let's Talk
           </button>
         </div>
@@ -81,12 +81,12 @@ export default function TeamSection() {
 
       {/* Team Grid */}
       <div className="pl-16 pr-16">
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-4 gap-4">
           {/* Team Member Cards */}
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="relative h-[650px] w-[550px] rounded-3xl overflow-hidden group cursor-pointer"
+              className="relative h-[450px] w-auto rounded-2xl overflow-hidden group cursor-pointer"
             >
               {/* Team member image */}
               <Image
@@ -97,12 +97,12 @@ export default function TeamSection() {
               />
               
               {/* Text overlay with crystal clear blur effect using Card */}
-              <Card className="absolute bottom-4 left-4 right-4 bg-black/20 backdrop-blur-lg border-0 shadow-lg rounded-2xl z-10">
-                <CardContent className="p-6">
-                  <h3 className="text-white text-2xl font-bold mb-1.5 leading-tight">
+              <Card className="absolute bottom-3 left-3 right-3 bg-black/20 backdrop-blur-lg border-0 shadow-lg rounded-xl z-10">
+                <CardContent className="p-4">
+                  <h3 className="text-white text-lg font-bold mb-1 leading-tight">
                     {member.name}
                   </h3>
-                  <p className="text-white text-base font-normal leading-tight">
+                  <p className="text-white text-sm font-normal leading-tight">
                     {member.title}
                   </p>
                 </CardContent>
@@ -111,18 +111,18 @@ export default function TeamSection() {
           ))}
 
           {/* About Us Card */}
-          <div className="relative h-[650px] w-[550px] rounded-3xl overflow-hidden bg-hennessey-blue p-10 flex flex-col justify-between">
+          <div className="relative h-[450px] w-auto rounded-2xl overflow-hidden bg-hennessey-blue p-6 flex flex-col justify-between">
             <div>
-              <h3 className="text-hennessey-white text-5xl font-bold mb-8">
+              <h3 className="text-hennessey-white text-3xl font-bold mb-4">
                 About Us
               </h3>
-              <p className="text-hennessey-white text-lg leading-relaxed">
+              <p className="text-hennessey-white text-base leading-relaxed">
                 Behind every project is a team dedicated to smarter planning, reliable procurement, and measurable results.
               </p>
             </div>
 
             {/* Work With Us button */}
-            <button className="bg-hennessey-white text-hennessey-blue px-10 py-4 rounded-full text-lg font-semibold hover:opacity-90 transition-opacity self-start">
+            <button className="bg-hennessey-white text-hennessey-blue px-6 py-3 rounded-full text-base font-semibold hover:opacity-90 transition-opacity self-start">
               Work With Us
             </button>
           </div>

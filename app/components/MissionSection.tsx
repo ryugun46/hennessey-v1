@@ -2,9 +2,9 @@ import Image from 'next/image'
 
 export default function MissionSection() {
   return (
-    <section className="w-full bg-hennessey-white py-24 px-16">
+    <section className="w-full max-w-[1440px] h-[850px] bg-hennessey-white py-16 px-16 mx-auto my-0 overflow-hidden">
       {/* Top Section */}
-      <div className="mb-24 relative pl-16 pr-16">
+      <div className="mb-12 relative pl-16 pr-16">
         {/* Our Mission Label - Leftmost, aligned with "Scroll to know more" */}
         <div className="absolute left-16 flex items-center gap-3">
           <div className="w-2.5 h-2.5 rounded-full bg-hennessey-blue flex-shrink-0"></div>
@@ -14,7 +14,7 @@ export default function MissionSection() {
         {/* Mission Statement and Button - Centered */}
         <div className="flex justify-center">
           <div className="max-w-6xl">
-            <p className="text-hennessey-black text-6xl font-normal mb-10" style={{maxWidth: '1100px', lineHeight: '1.15'}}>
+            <p className="text-hennessey-black text-5xl font-normal mb-6" style={{maxWidth: '1100px', lineHeight: '1.15'}}>
               Our mission is simple: To reduce complexity, improve reliability, and deliver measurable value across every project we touch.
             </p>
             <button className="bg-[#E6E3DE] text-[#444444] px-10 py-3 rounded-full border-0 shadow-none hover:opacity-90 transition-opacity font-medium text-base" style={{fontFamily: 'sans-serif'}}>
@@ -40,27 +40,27 @@ export default function MissionSection() {
           </div>
 
           {/* Right Side - Statistics and Logos - Centered and positioned */}
-          <div className="flex flex-col mx-auto mt-20 gap-4" style={{width: 'max-content', height: '487.5px'}}>
+          <div className="flex flex-col mx-auto mt-8 gap-4" style={{width: 'max-content', height: '487.5px'}}>
             {/* Statistics - Lowered slightly and centered */}
-            <div className="flex items-center pt-8" style={{height: 'auto'}}>
+            <div className="flex items-center pt-4" style={{height: 'auto'}}>
               <div className="flex items-start gap-12 mx-auto">
                 <div className="flex flex-col">
-                  <div className="text-hennessey-blue text-7xl font-normal mb-3 leading-none">95%</div>
-                  <div className="text-hennessey-black text-base font-medium">Project Reliability</div>
+                  <div className="text-hennessey-blue text-6xl font-normal mb-2 leading-none">95%</div>
+                  <div className="text-hennessey-black text-sm font-medium">Project Reliability</div>
                 </div>
                 
-                <div className="h-20 w-[1px] bg-gray-200 flex-shrink-0"></div>
+                <div className="h-16 w-[1px] bg-gray-200 flex-shrink-0"></div>
                 
                 <div className="flex flex-col">
-                  <div className="text-hennessey-blue text-7xl font-normal mb-3 leading-none">150+</div>
-                  <div className="text-hennessey-black text-base font-medium">Vetted Suppliers</div>
+                  <div className="text-hennessey-blue text-6xl font-normal mb-2 leading-none">150+</div>
+                  <div className="text-hennessey-black text-sm font-medium">Vetted Suppliers</div>
                 </div>
                 
-                <div className="h-20 w-[1px] bg-gray-200 flex-shrink-0"></div>
+                <div className="h-16 w-[1px] bg-gray-200 flex-shrink-0"></div>
                 
                 <div className="flex flex-col">
-                  <div className="text-hennessey-blue text-7xl font-normal mb-3 leading-none">$10M+</div>
-                  <div className="text-hennessey-black text-base font-medium">Cost Savings Delivered</div>
+                  <div className="text-hennessey-blue text-6xl font-normal mb-2 leading-none">$10M+</div>
+                  <div className="text-hennessey-black text-sm font-medium">Cost Savings Delivered</div>
                 </div>
               </div>
             </div>

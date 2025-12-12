@@ -13,19 +13,19 @@ export default function ProcessSection() {
   }
 
   return (
-    <section className="w-full bg-hennessey-white py-24 px-16">
+    <section className="w-full max-w-[1440px] h-[850px] bg-hennessey-white py-16 px-16 mx-auto my-0 overflow-hidden">
       {/* Top Section - Label, Heading, and Button */}
-      <div className="mb-16 pl-16 pr-16">
-        <div className="flex items-start justify-between mb-12">
+      <div className="mb-8 pl-16 pr-16">
+        <div className="flex items-start justify-between mb-6">
           <div className="flex-1">
             {/* Our Process Label */}
-            <div className="flex items-center gap-3 mb-8">
+            <div className="flex items-center gap-3 mb-4">
               <div className="w-2.5 h-2.5 rounded-full bg-hennessey-blue flex-shrink-0"></div>
-              <h2 className="text-hennessey-black text-xl font-medium">Our Process</h2>
+              <h2 className="text-hennessey-black text-lg font-medium">Our Process</h2>
             </div>
 
             {/* Main Heading */}
-            <h3 className="text-hennessey-black text-5xl font-normal leading-tight max-w-4xl">
+            <h3 className="text-hennessey-black text-4xl font-normal leading-tight max-w-4xl">
               We bring structure and transparency to every stage of construction consulting to procurement and delivery.
             </h3>
           </div>
@@ -63,9 +63,9 @@ export default function ProcessSection() {
               }`}
               onClick={() => toggleBlock('discover')}
             >
-              <div className="p-8">
+              <div className="p-6">
                 <div className="flex items-center justify-between">
-                  <h4 className="text-2xl font-medium">Discover</h4>
+                  <h4 className="text-xl font-medium">Discover</h4>
                   <div className="w-8 h-8 flex items-center justify-center">
                     {expandedBlock === 'discover' ? (
                       <svg
@@ -99,8 +99,8 @@ export default function ProcessSection() {
                   </div>
                 </div>
                 {expandedBlock === 'discover' && (
-                  <div className="mt-6">
-                    <p className="text-base leading-relaxed opacity-90">
+                  <div className="mt-4">
+                    <p className="text-sm leading-relaxed opacity-90">
                       We bring structure and transparency to every stage of construction consulting, from pre-construction planning to procurement and supply chain management. Implement reliable, cost-effective procurement solutions that keep your construction projects on time and on budget.
                     </p>
                   </div>
@@ -117,9 +117,9 @@ export default function ProcessSection() {
               }`}
               onClick={() => toggleBlock('strategize')}
             >
-              <div className="p-8">
+              <div className="p-6">
                 <div className="flex items-center justify-between">
-                  <h4 className="text-2xl font-medium">Strategize</h4>
+                  <h4 className="text-xl font-medium">Strategize</h4>
                   <div className="w-8 h-8 flex items-center justify-center">
                     {expandedBlock === 'strategize' ? (
                       <svg
@@ -153,8 +153,8 @@ export default function ProcessSection() {
                   </div>
                 </div>
                 {expandedBlock === 'strategize' && (
-                  <div className="mt-6">
-                    <p className="text-base leading-relaxed opacity-90">
+                  <div className="mt-4">
+                    <p className="text-sm leading-relaxed opacity-90">
                       Develop comprehensive procurement strategies aligned with your project goals. We analyze market conditions, identify optimal suppliers, and create actionable plans that minimize risk while maximizing value.
                     </p>
                   </div>
@@ -171,9 +171,9 @@ export default function ProcessSection() {
               }`}
               onClick={() => toggleBlock('execute')}
             >
-              <div className="p-8">
+              <div className="p-6">
                 <div className="flex items-center justify-between">
-                  <h4 className="text-2xl font-medium">Execute</h4>
+                  <h4 className="text-xl font-medium">Execute</h4>
                   <div className="w-8 h-8 flex items-center justify-center">
                     {expandedBlock === 'execute' ? (
                       <svg
@@ -207,8 +207,8 @@ export default function ProcessSection() {
                   </div>
                 </div>
                 {expandedBlock === 'execute' && (
-                  <div className="mt-6">
-                    <p className="text-base leading-relaxed opacity-90">
+                  <div className="mt-4">
+                    <p className="text-sm leading-relaxed opacity-90">
                       Implement procurement solutions with precision and efficiency. Our team manages vendor relationships, oversees contract negotiations, and ensures seamless coordination throughout the procurement process.
                     </p>
                   </div>
@@ -225,9 +225,9 @@ export default function ProcessSection() {
               }`}
               onClick={() => toggleBlock('optimize')}
             >
-              <div className="p-8">
+              <div className="p-6">
                 <div className="flex items-center justify-between">
-                  <h4 className="text-2xl font-medium">Optimize</h4>
+                  <h4 className="text-xl font-medium">Optimize</h4>
                   <div className="w-8 h-8 flex items-center justify-center">
                     {expandedBlock === 'optimize' ? (
                       <svg
@@ -261,8 +261,8 @@ export default function ProcessSection() {
                   </div>
                 </div>
                 {expandedBlock === 'optimize' && (
-                  <div className="mt-6">
-                    <p className="text-base leading-relaxed opacity-90">
+                  <div className="mt-4">
+                    <p className="text-sm leading-relaxed opacity-90">
                       Continuously improve procurement performance through data analysis and feedback loops. We identify opportunities for cost reduction, process improvements, and enhanced supplier relationships.
                     </p>
                   </div>
