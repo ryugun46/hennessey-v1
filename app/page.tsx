@@ -29,8 +29,8 @@ export default function Home() {
             <Image
               src="/site-assets/start-logo.png"
               alt="Hennessey & Company Logo"
-              width={120}
-              height={120}
+              width={200}
+              height={200}
               className="object-contain"
             />
           </div>
