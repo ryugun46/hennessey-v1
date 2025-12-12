@@ -86,7 +86,7 @@ export default function TeamSection() {
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="relative h-[650px] w-[350px] rounded-3xl overflow-hidden group cursor-pointer"
+              className="relative h-[650px] w-[450px] rounded-3xl overflow-hidden group cursor-pointer"
             >
               {/* Team member image */}
               <Image
@@ -111,7 +111,7 @@ export default function TeamSection() {
           ))}
 
           {/* About Us Card */}
-          <div className="relative h-[650px] w-[350px] rounded-3xl overflow-hidden bg-hennessey-blue p-10 flex flex-col justify-between">
+          <div className="relative h-[650px] w-[450px] rounded-3xl overflow-hidden bg-hennessey-blue p-10 flex flex-col justify-between">
             <div>
               <h3 className="text-hennessey-white text-5xl font-bold mb-8">
                 About Us
