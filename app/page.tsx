@@ -118,6 +118,20 @@ export default function Home() {
         </div>
       </div>
 
+      {/* How We Work Button Section */}
+      <div className="w-full bg-hennessey-white py-12 flex justify-center">
+        <button className="bg-white text-hennessey-black px-10 py-4 rounded-full flex items-center gap-3 hover:opacity-90 transition-opacity font-normal text-lg">
+          <span>How We Work</span>
+          <svg
+            className="w-5 h-5 flex-shrink-0"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </button>
+      </div>
+
       {/* Mission Section */}
       <MissionSection />
 
