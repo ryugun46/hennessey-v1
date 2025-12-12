@@ -114,6 +114,7 @@ export default function Home() {
             <div className="w-2.5 h-2.5 rounded-full bg-hennessey-white"></div>
           </div>
         </div>
+        </div>
       </div>
 
       {/* Mission Section */}
